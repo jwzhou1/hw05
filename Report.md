@@ -99,23 +99,23 @@ Suppose we have the following dataset of student records:
 
 | Student Name | Score |
 |--------------|-------|
-| John         | 85    |
-| Emma         | 78    |
-| Alan         | 85    |
-| Salah        | 92    |
-| Michael      | 78    |
-| Lester       | 92    |
+| Jason        | 88    |
+| Emma         | 75    |
+| Alan         | 88    |
+| Salah        | 99    |
+| Michael      | 75    |
+| Lester       | 99    |
 
 If we sort this dataset based on scores using a stable sorting algorithm like Insertion Sort, the result would be:
 
 | Student Name | Score |
 |--------------|-------|
-| Emma         | 78    |
-| Michael      | 78    |
-| John         | 85    |
-| Alan         | 85    |
-| Salah        | 92    |
-| Lester       | 92    |
+| Emma         | 75    |
+| Michael      | 75    |
+| Jason        | 88    |
+| Alan         | 88    |
+| Salah        | 99    |
+| Lester       | 99    |
 
 In the resulting sorted arrangement, we observe that the relative positions of students with identical scores are maintained, such as the cases of Emma and Michael, John and Alex, and Sarah and Lily. This preservation of order holds significance when the original sequence carries meaning, such as the order of record entry or when subsequent operations rely on the sorted data.
 
@@ -197,7 +197,6 @@ Add your references here. A good reference includes an inline citation, such as 
 [4] Educative Answers Team, "What is the Python sorted() function?" Retrieved June 9, 2023. Available: https://www.educative.io/answers/what-is-the-python-sorted-function  
 [5] Laux, C, "Timsort," Chris Laux. Available: https://www.chrislaux.com/timsort  
 [6] Javatpoint.com, "Tim Sort," in javatpoint.com, 2023. Available: https://www.javatpoint.com/tim-sort.  
-
 
 
 ## Footnotes:
