@@ -7,9 +7,9 @@
 // Input: The 'address of' an index into an array for positions in an array.
 void swap(int *a, int *b)
 {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
+    int temp = *a; // Store the value pointed to by 'a' in the variable 'temp'
+    *a = *b; // Assign the value pointed to by 'b' to the memory location pointed to by 'a'
+    *b = temp; // Assign the value stored in 'temp' to the memory location pointed to by 'b'
 }
 
 // Input: A pointer to an array (i.e. the array itself points to the first index)
