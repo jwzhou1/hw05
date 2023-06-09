@@ -164,10 +164,15 @@ Therefore, the overall time complexity of the algorithm can be approximated as $
 
 
 ### 8. Modern Sort
-Sorting algorithms are still being studied today. They often include a statistical analysis of data before sorting. This next question will require some research, as it isn't included in class content. When you call `sort()` or `sorted()` in Python 3.6+, what sort is it using? 
+Sorting algorithms are still being studied today. They often include a statistical analysis of data before sorting. This next question will require some research, as it isn't included in class content. When you call `sort()` or `sorted()` in Python 3.6+, what sort is it using?  
+
+In Python 3.6 and later versions, the built-in sort() function and sorted() function use a sorting algorithm called Timsort. Timsort is a hybrid sorting algorithm derived from merge sort and insertion sort. [4]  
 
 #### 8.1 Visualize
 Find a graphic / visualiation (can be a youtube video) that demonstrates the sort in action. 
+
+Timsort visualiation [5]: https://www.chrislaux.com/timsort
+
 
 #### 8.2 Big O
 Give the worst and best case time-complexity, and examples that would generate them. 
@@ -180,7 +185,8 @@ Add your references here. A good reference includes an inline citation, such as 
 [1] CS61B: Data Structures, "Sorting," UC Berkeley, Spring 2020. Available: https://inst.eecs.berkeley.edu/~cs61b/sp20/docs/sorting_notes.html.  
 [2] Scaler Academy, "Quick Sort in Java," Scaler, Accessed June 9, 2023. [Online]. Available: https://www.scaler.com/topics/quick-sort-in-java/.  
 [3] Interview Kickstart, "Stability in Sorting Algorithms," Interview Kickstart. [Online]. Available: https://www.interviewkickstart.com/learn/stability-in-sorting-algorithms.  
-
+[4] Educative Answers Team, "What is the Python sorted() function?" Retrieved June 9, 2023. Available: https://www.educative.io/answers/what-is-the-python-sorted-function  
+[5] Laux, C, "Timsort," Chris Laux. Available: https://www.chrislaux.com/timsort
 
 
 ## Footnotes:
