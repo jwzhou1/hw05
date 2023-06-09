@@ -22,12 +22,15 @@ You are free to write a script to run the program and build your table (then cop
 | 230000| 170.7825| 61.1213   | 33.5687   | 0.0392  | 0.0297  |
 
 
+
 ## BigO Analysis  / Questions
 
 ### 1. Build a line chart
 Build a line chart using your favorite program. Your X axis will be N increasing, and your Y access will be the numbers for each type of sort. This will create something similar to the graph in the instructions, though it won't be as smooth. Due to speed differences, you may need to break up the $O(\log n)$ and $O(n^2)$ into different charts.
 
 Include the image in your markdown. As a reminder, you save the image in your repo, and use [image markdown].
+
+![Alt text](sortingLineChart-1.png)
 
 
 
