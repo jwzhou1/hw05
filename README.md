@@ -22,7 +22,7 @@ Selection Sort: https://www.geeksforgeeks.org/selection-sort/
 Merge Sort: https://www.geeksforgeeks.org/c-program-for-merge-sort/  
 
 Report reference:  
-[1] HackerEarth. Sorting and Searching Algorithms: Time Complexities Cheat Sheet. HackerEarth. Available: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/.  
+[1] HackerEarth. Sorting and Searching Algorithms: Time Complexities Cheat Sheet. HackerEarth. [Online]. Available: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/.  
 [2] Baeldung, "Merge Sort Time Complexity," Baeldung, March 10, 2021. [Online]. Available: https://www.baeldung.com/cs/merge-sort-time-complexity.  
 [3] GeeksforGeeks, "Merge Sort vs Insertion Sort," GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/merge-sort-vs-insertion-sort/.  
 [4] GeeksforGeeks, "Analysis of Different Sorting Techniques," GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/.  

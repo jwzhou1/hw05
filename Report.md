@@ -37,6 +37,18 @@ Include the image in your markdown. As a reminder, you save the image in your re
 ### 2. Convinced?
 Given the direction of the line chart, are you "convinced" of the complexity of each of the sorts? Why or why not?
 
+Yes, I am "convinced" of the complexity of each of the sorts by the direction of the above line chart. 
+
+For Bubble Sort: We look at the line chart, as the input size (N) increases, the time taken by Bubble Sort grows significantly. The curve for Bubble Sort shows a steep upward trend. This shows that Bubble Sort has a higher time complexity compared to other sorting algorithms such as Selection sort, Insertion sort, Merge sort and Quick sort.
+
+For Selection Sort: Similar to Bubble Sort, the line chart shows an increasing trend as the input size grows, indicating a higher time complexity.
+However, Selection Sort generally performs better than Bubble Sort in practice, as it makes fewer swaps.
+
+For Insertion Sort: From the line chart, Insertion Sort's curve shows a similar increasing trend, but it appears to be slightly better than Bubble Sort and Selection Sort.
+
+For Merge Sort: The line chart for Merge Sort demonstrates its superior performance compared to the previous three sorting algorithms. As the input size grows, Merge Sort's curve shows a much flatter increase, indicating a lower time complexity.  
+
+For Quick Sort: The line chart for Quick Sort shows that it performs well in practice and generally has a similar trend to Merge Sort. Quick Sort's pivot selection and partitioning process make it efficient for random or nearly random inputs.
 
 ### 3. Big O
 Build another table that presents the best, worst, and average case for Bubble, Selection, Insertion, Merge, and Quick. You are free to use resources for this, but please reference them if you do. 
@@ -88,7 +100,7 @@ Provide example of arrays that generate _best_ case for Bubble, Selection, Inser
    * This array is already sorted in ascending order. Insertion Sort will do a single pass through the array without any element shifts.
 
 4. Best case for Merge Sort:
-   * Array: [1, 2, 3, 4, 5]
+   * Array: [1, 2, 3, 4, 5, 6]
    * This array is already sorted in ascending order. Merge Sort can merge the sorted subarrays without any additional comparisons or swaps.
 
 
@@ -265,7 +277,7 @@ Example: Consider an array [5, 4, 3, 2, 1] as the input. Timsort would need to p
 ## References
 Add your references here. A good reference includes an inline citation, such as [1] , and then down in your references section, you include the full details of the reference. Computer Science research often uses [IEEE] or [ACM Reference format].
 
-[1] HackerEarth. Sorting and Searching Algorithms: Time Complexities Cheat Sheet. HackerEarth. Available: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/.  
+[1] HackerEarth. Sorting and Searching Algorithms: Time Complexities Cheat Sheet. HackerEarth. [Online]. Available: https://www.hackerearth.com/practice/notes/sorting-and-searching-algorithms-time-complexities-cheat-sheet/.  
 [2] Baeldung, "Merge Sort Time Complexity," Baeldung, March 10, 2021. [Online]. Available: https://www.baeldung.com/cs/merge-sort-time-complexity.  
 [3] GeeksforGeeks, "Merge Sort vs Insertion Sort," GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/merge-sort-vs-insertion-sort/.  
 [4] GeeksforGeeks, "Analysis of Different Sorting Techniques," GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/analysis-of-different-sorting-techniques/.  
