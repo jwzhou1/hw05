@@ -81,9 +81,9 @@ Pair the following terms with the correct function in the table.
 ### 6. Stable vs Unstable
 Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable  
 
-One example of a stable sorting algorithm is Insertion Sort. In Insertion Sort, elements are iteratively inserted into their correct position in the sorted portion of the array. When we meet elements with equal keys, the algorithm compares their positions and ensures that the one appearing first in the original array remains first in the sorted array. This makes Insertion Sort stable.[1]
+One example of a stable sorting algorithm is Insertion Sort. In Insertion Sort, elements are iteratively inserted into their correct position in the sorted portion of the array. When we meet elements with equal keys, the algorithm compares their positions and ensures that the one appearing first in the original array remains first in the sorted array. This makes Insertion Sort stable. [1]
 
-One example of an unstable sorting algorithm is Quick Sort. Quick Sort divides the array into partitions based on a pivot element and recursively sorts the partitions. The partitioning process does not guarantee the relative order of elements with equal keys. As a result, the final sorted sequence may not maintain the original order of elements with equal keys, making Quick Sort an unstable algorithm.[2]
+One example of an unstable sorting algorithm is Quick Sort. Quick Sort divides the array into partitions based on a pivot element and recursively sorts the partitions. The partitioning process does not guarantee the relative order of elements with equal keys. As a result, the final sorted sequence may not maintain the original order of elements with equal keys, making Quick Sort an unstable algorithm. [2]
 
 ### 6.2 When stability is needed?
 Explain in your own words a case in which you will want a stable algorithm over an unstable. Include an example. 
