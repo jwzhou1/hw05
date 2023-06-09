@@ -16,9 +16,9 @@ No.
 
 Did you use any external resources (you do not have to cite in class material)? (Cite them below)  
 - one row per resource  
-Insertion Sort: https://www.geeksforgeeks.org/insertion-sort/
-Selection Sort: https://www.geeksforgeeks.org/selection-sort/
-Merge Sort: https://www.geeksforgeeks.org/c-program-for-merge-sort/
+Insertion Sort: https://www.geeksforgeeks.org/insertion-sort/  
+Selection Sort: https://www.geeksforgeeks.org/selection-sort/  
+Merge Sort: https://www.geeksforgeeks.org/c-program-for-merge-sort/  
 
 
 (Optional) What was your favorite part of the assignment? 
