@@ -78,13 +78,50 @@ Pair the following terms with the correct function in the table.
 | $O(2^n)$    |  Exponential |
 
 
-
 ### 6. Stable vs Unstable
 Look up stability as it refers to sorting. In your own words, describe one sort that is stable and one sort that isn't stable  
+
+One example of a stable sorting algorithm is Insertion Sort. In Insertion Sort, elements are iteratively inserted into their correct position in the sorted portion of the array. When we meet elements with equal keys, the algorithm compares their positions and ensures that the one appearing first in the original array remains first in the sorted array. This makes Insertion Sort stable. [1]
+
+One example of an unstable sorting algorithm is Quick Sort. Quick Sort divides the array into partitions based on a pivot element and recursively sorts the partitions. The partitioning process does not guarantee the relative order of elements with equal keys. As a result, the final sorted sequence may not maintain the original order of elements with equal keys, making Quick Sort an unstable algorithm. [2]
 
 
 ### 6.2 When stability is needed?
 Explain in your own words a case in which you will want a stable algorithm over an unstable. Include an example. 
+
+Below is an explanation of a case where a stable sorting algorithm is preferred over an unstable one. [3]
+
+Let's consider a case where we have a dataset containing student records with their names and corresponding scores. We need to sort the records based on the scores in ascending order. However, there might be cases where multiple students have the same score. In this case, maintaining the original order of the students with the same score becomes important. Here, a stable sorting algorithm is preferred over an unstable one because it ensures that students who obtained the same score are sorted based on their original order.
+
+Let's illustrate this with an example:
+
+Suppose we have the following dataset of student records:
+
+| Student Name | Score |
+|--------------|-------|
+| John         | 85    |
+| Emma         | 78    |
+| Alan         | 85    |
+| Salah        | 92    |
+| Michael      | 78    |
+| Lester       | 92    |
+
+If we sort this dataset based on scores using a stable sorting algorithm like Insertion Sort, the result would be:
+
+| Student Name | Score |
+|--------------|-------|
+| Emma         | 78    |
+| Michael      | 78    |
+| John         | 85    |
+| Alan         | 85    |
+| Salah        | 92    |
+| Lester       | 92    |
+
+In the resulting sorted arrangement, we observe that the relative positions of students with identical scores are maintained, such as the cases of Emma and Michael, John and Alex, and Sarah and Lily. This preservation of order holds significance when the original sequence carries meaning, such as the order of record entry or when subsequent operations rely on the sorted data.
+
+Conversely, an unstable sorting algorithm like Quick Sort may not uphold the original order of students with the same score, leading to a different arrangement.
+
+Hence, in scenarios where preserving the relative order of elements with equal keys is crucial, as illustrated in the given example, the preference lies with a stable sorting algorithm over an unstable one.
 
 ### 7. Gold Thief
 
@@ -93,24 +130,71 @@ You are planning a heist to steal a rare coin that weighs 1.0001 ounces. The pro
 #### 7.1 Algorithm
 Describe an algorithm that will help you find the coin. We encourage you to use pseudo-code, but not required.
 
+    Function findRareCoin(coins):
+        Divide the coins into equal piles, each containing an even number of coins (except for one pile if the total number of coins is odd).
+        For each pile:
+            Weigh two random piles of coins against each other using the balance scale.
+            If the two piles balance each other, it means the rare coin is not in those two piles. Discard those two piles.
+            If the two piles don't balance each other, it means the rare coin is in one of those two piles. Keep the heavier pile.
+        
+        Repeat the above steps until there is only one pile left.
+        
+        Weigh the remaining pile against a single coin (which can be any coin).
+        If they balance, the remaining coin is the rare coin.
+        If they don't balance, the rare coin is the one that caused the imbalance on the scale.
+
+        Return the rare coin.
+
+    End Function
+
+
 #### 7.2 Time Complexity
 What is the average time complexity of your algorithm? 
 
+The average time complexity of my algorithm can be analyzed as follows:
+
+1. Dividing the coins into equal piles: This step requires dividing the total number of coins into equal piles. Since the number of piles is directly related to the number of coins, this step can be considered to have a time complexity of $O(1)$.
+
+2. Weighing two random piles of coins: For each pile, we need to weigh it against another randomly chosen pile. Since the number of piles is halved after each weighing, this step would require $\log_2n$ weighings, where n is the total number of coins. Each weighing operation takes a constant amount of time, resulting in a time complexity of $O(\log_2n)$.
+
+3. Repeating the steps until there is only one pile left: The number of weighings required in this step is $\log_2n$, where n is the total number of coins. Hence, the time complexity for this step is $O(\log_2n)$.
+
+4. Weighing the remaining pile against a single coin: This step involves comparing the weight of the remaining pile with a single coin. Since it involves only a constant number of comparisons, the time complexity is $O(1)$.
+
+Therefore, the overall time complexity of the algorithm can be approximated as $O(\log_2n)$, where n is the total number of coins.
+
 ### 8. Modern Sort
-Sorting algorithms are still being studied today. They often include a statistical analysis of data before sorting. This next question will require some research, as it isn't included in class content. When you call `sort()` or `sorted()` in Python 3.6+, what sort is it using? 
+Sorting algorithms are still being studied today. They often include a statistical analysis of data before sorting. This next question will require some research, as it isn't included in class content. When you call `sort()` or `sorted()` in Python 3.6+, what sort is it using?  
+
+In Python 3.6 and later versions, the built-in sort() function and sorted() function use a sorting algorithm called Timsort. Timsort is a hybrid sorting algorithm derived from merge sort and insertion sort. [4]  
 
 #### 8.1 Visualize
-Find a graphic / visualiation (can be a youtube video) that demonstrates the sort in action. 
+Find a graphic / visualiation (can be a youtube video) that demonstrates the sort in action.
+
+Timsort visualiation [5]: https://www.chrislaux.com/timsort
 
 #### 8.2 Big O
 Give the worst and best case time-complexity, and examples that would generate them. 
+
+The best case time complexity of Timsort occurs when the input array is already sorted. In this case, Timsort performs a single pass through the array to identify already sorted sequences, and then it performs a final merging step. The best case time complexity of Timsort is $O(n)$, where n is the size of the input array. This is because Timsort only needs to make a linear pass through the array to identify the sorted sequences and perform a linear merging step. [6]
+
+Example: Consider an array [1, 2, 3, 4, 5] as the input. Timsort would detect that the array is already sorted and would simply perform a final merging step, resulting in a time complexity of $O(n)$, where n is the size of the array.
+
+The worst case time complexity of Timsort occurs when the input array is in reverse order. In this case, Timsort needs to perform a large number of comparisons and merge operations. The worst case time complexity of Timsort is $O(n \log_2n)$, where n is the size of the input array. This is because Timsort performs a combination of merge sort and insertion sort, which have worst case time complexities of $O(n \log_2n)$ and $O(n^2)$  respectively. However, due to the adaptive nature of Timsort, it tends to exhibit closer to $O(n \log_2n)$ behavior in practice. [6]
+
+Example: Consider an array [5, 4, 3, 2, 1] as the input. Timsort would need to perform multiple comparisons and merge operations to sort the array, resulting in a time complexity of $O(n \log_2n)$, where n is the size of the array.
 
 <hr>
 
 ## References
 Add your references here. A good reference includes an inline citation, such as [1] , and then down in your references section, you include the full details of the reference. Computer Science research often uses [IEEE] or [ACM Reference format].
 
-[1] Reference info, date, etc.
+[1] CS61B: Data Structures, "Sorting," UC Berkeley, Spring 2020. Available: https://inst.eecs.berkeley.edu/~cs61b/sp20/docs/sorting_notes.html.  
+[2] Scaler Academy, "Quick Sort in Java," Scaler, Accessed June 9, 2023. [Online]. Available: https://www.scaler.com/topics/quick-sort-in-java/.  
+[3] Interview Kickstart, "Stability in Sorting Algorithms," Interview Kickstart. [Online]. Available: https://www.interviewkickstart.com/learn/stability-in-sorting-algorithms.  
+[4] Educative Answers Team, "What is the Python sorted() function?" Retrieved June 9, 2023. Available: https://www.educative.io/answers/what-is-the-python-sorted-function  
+[5] Laux, C, "Timsort," Chris Laux. Available: https://www.chrislaux.com/timsort  
+[6] Javatpoint.com, "Tim Sort," in javatpoint.com, 2023. Available: https://www.javatpoint.com/tim-sort.  
 
 
 
