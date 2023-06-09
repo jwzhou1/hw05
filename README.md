@@ -14,12 +14,15 @@ Did you collaborate with any other students/TAs/Professors? If so, tell us who a
 - one per row, add more if needed  
 No.
 
-
 Did you use any external resources (you do not have to cite in class material)? (Cite them below)  
-- one row per resource
+- one row per resource  
+Insertion Sort: https://www.geeksforgeeks.org/insertion-sort/
+Selection Sort: https://www.geeksforgeeks.org/selection-sort/
+Merge Sort: https://www.geeksforgeeks.org/c-program-for-merge-sort/
 
 
 (Optional) What was your favorite part of the assignment? 
+    Learning some powerful sorting algorithms.
 
 (Optional) How would you improve the assignment? 
-
+    Include more real-world examples.
