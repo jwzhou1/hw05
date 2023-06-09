@@ -177,6 +177,15 @@ Timsort visualiation [5]: https://www.chrislaux.com/timsort
 #### 8.2 Big O
 Give the worst and best case time-complexity, and examples that would generate them. 
 
+The best case time complexity of Timsort occurs when the input array is already sorted. In this case, Timsort performs a single pass through the array to identify already sorted sequences, and then it performs a final merging step. The best case time complexity of Timsort is $O(n)$, where n is the size of the input array. This is because Timsort only needs to make a linear pass through the array to identify the sorted sequences and perform a linear merging step. [6]
+
+Example: Consider an array [1, 2, 3, 4, 5] as the input. Timsort would detect that the array is already sorted and would simply perform a final merging step, resulting in a time complexity of $O(n)$, where n is the size of the array.
+
+The worst case time complexity of Timsort occurs when the input array is in reverse order. In this case, Timsort needs to perform a large number of comparisons and merge operations. The worst case time complexity of Timsort is $O(n \log_2n)$, where n is the size of the input array. This is because Timsort performs a combination of merge sort and insertion sort, which have worst case time complexities of $O(n \log_2n)$ and $O(n^2)$  respectively. However, due to the adaptive nature of Timsort, it tends to exhibit closer to $O(n \log_2n)$ behavior in practice. [6]
+
+Example: Consider an array [5, 4, 3, 2, 1] as the input. Timsort would need to perform multiple comparisons and merge operations to sort the array, resulting in a time complexity of $O(n \log_2n)$, where n is the size of the array.
+
+
 <hr>
 
 ## References
@@ -186,7 +195,8 @@ Add your references here. A good reference includes an inline citation, such as 
 [2] Scaler Academy, "Quick Sort in Java," Scaler, Accessed June 9, 2023. [Online]. Available: https://www.scaler.com/topics/quick-sort-in-java/.  
 [3] Interview Kickstart, "Stability in Sorting Algorithms," Interview Kickstart. [Online]. Available: https://www.interviewkickstart.com/learn/stability-in-sorting-algorithms.  
 [4] Educative Answers Team, "What is the Python sorted() function?" Retrieved June 9, 2023. Available: https://www.educative.io/answers/what-is-the-python-sorted-function  
-[5] Laux, C, "Timsort," Chris Laux. Available: https://www.chrislaux.com/timsort
+[5] Laux, C, "Timsort," Chris Laux. Available: https://www.chrislaux.com/timsort  
+[6] Javatpoint.com, "Tim Sort," in javatpoint.com, 2023. Available: https://www.javatpoint.com/tim-sort. 
 
 
 ## Footnotes:
